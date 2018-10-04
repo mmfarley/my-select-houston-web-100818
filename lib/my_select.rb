@@ -1,7 +1,10 @@
 def my_select(collection)
- i = 0
- while i < collection.length
-  yield collection[i]
-  i += 1
- end
+  i = 0
+  bool = false
+  new_collection = []
+  while i < collection.length
+   if yield(collection[i]) == true
+    i += 1
+  end
+  new_collection
 end
