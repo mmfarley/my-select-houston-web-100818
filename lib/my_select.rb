@@ -6,7 +6,7 @@ def my_select(collection)
    if temp == true
      new_collection << temp
    end
-    i += 1
+  i += 1
   end
   new_collection
 end
